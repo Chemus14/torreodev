@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- ═══════════════════════════════════════
+       SEO BÁSICO
+  ════════════════════════════════════════ -->
+    <title>
+      Torreodev | Desarrollo Web, SEO y Marketing Digital en Extremadura
+    </title>
+    <meta
+      name="description"
+      content="Agencia digital en Extremadura especializada en desarrollo web profesional, SEO y marketing digital. Webs que generan clientes reales para tu negocio."
+    />
+    <meta
+      name="keywords"
+      content="desarrollo web Extremadura, SEO Extremadura, diseño web profesional, marketing digital, páginas web empresas"
+    />
+    <meta
+      name="author"
+      content="Torreodev"
+    />
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+    <link
+      rel="canonical"
+      href="https://torreodev.com/"
+    />
+
+    <!-- ═══════════════════════════════════════
+       OPEN GRAPH (redes sociales / WhatsApp)
+  ════════════════════════════════════════ -->
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:url"
+      content="https://torreodev.com/"
+    />
+    <meta
+      property="og:title"
+      content="Torreodev | Desarrollo Web, SEO y Marketing Digital"
+    />
+    <meta
+      property="og:description"
+      content="Webs profesionales, estrategias SEO y campañas de marketing que convierten visitas en clientes."
+    />
+    <meta
+      property="og:image"
+      content="https://torreodev.com/img/og-image.jpg"
+    />
+    <meta
+      property="og:locale"
+      content="es_ES"
+    />
+    <meta
+      property="og:site_name"
+      content="Torreodev"
+    />
+
+    <!-- ═══════════════════════════════════════
+       TWITTER CARD
+  ════════════════════════════════════════ -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Torreodev | Desarrollo Web, SEO y Marketing Digital"
+    />
+    <meta
+      name="twitter:description"
+      content="Webs profesionales, SEO y marketing digital en Extremadura."
+    />
+    <meta
+      name="twitter:image"
+      content="https://torreodev.com/img/og-image.jpg"
+    />
+
+    <!-- ═══════════════════════════════════════
+       DATOS ESTRUCTURADOS (Schema.org)
+       Google los usa para mostrar info rica
+  ════════════════════════════════════════ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Torreodev",
+        "description": "Agencia digital especializada en desarrollo web, SEO y marketing digital en Extremadura.",
+        "url": "https://torreodev.com",
+        "telephone": "+34600000000",
+        "email": "hola@torreodev.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Extremadura",
+          "addressCountry": "ES"
+        },
+        "areaServed": "ES",
+        "serviceType": ["Desarrollo Web", "SEO", "Marketing Digital"],
+        "priceRange": "€€"
+      }
+    </script>
+
+    <!-- ═══════════════════════════════════════
+       FAVICON (cuando tengas el archivo)
+  ════════════════════════════════════════ -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/img/favicon.svg"
+    />
+    <meta
+      name="theme-color"
+      content="#0a0a0f"
+    />
+
+    <!-- ═══════════════════════════════════════
+       FUENTES (solo los pesos que usamos)
+  ════════════════════════════════════════ -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
+  </head>
+  <body>
+    <!-- ═══════════════════════════
+       HEADER
+  ════════════════════════════ -->
+    <header role="banner">
+      <a
+        href="/"
+        class="logo"
+        aria-label="Torreodev - Inicio"
+        >TORREO<span>DEV</span></a
+      >
+      <nav
+        role="navigation"
+        aria-label="Navegación principal"
+      >
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a
+          href="#contacto"
+          class="nav-cta"
+          >Contactar</a
+        >
+      </nav>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="navigation"
+      aria-label="Menú móvil"
+    >
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#proceso">Proceso</a>
+      <a
+        href="#contacto"
+        class="mobile-cta"
+        >Solicitar presupuesto</a
+      >
+    </div>
+
+    <!-- ═══════════════════════════
+       HERO
+  ════════════════════════════ -->
+    <section
+      class="hero"
+      aria-labelledby="hero-title"
+    >
+      <div
+        class="hero-glow"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="hero-glow2"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero-label"
+        aria-hidden="true"
+      >
+        Agencia digital · Resultados reales
+      </div>
+
+      <h1 id="hero-title">
+        Tu presencia digital que <em>trabaja</em><br />mientras tú descansas
+      </h1>
+
+      <p class="hero-desc">
+        Desarrollamos webs profesionales, estrategias SEO y campañas de
+        marketing digital orientadas a resultados. No vendemos páginas web:
+        construimos activos de negocio.
+      </p>
+
+      <div class="hero-actions">
+        <a
+          href="https://wa.me/34600000000"
+          class="btn-primary"
+          target="_blank"
+          rel="noopener"
+        >
+          <span aria-hidden="true">💬</span> Hablar por WhatsApp
+        </a>
+        <a
+          href="#servicios"
+          class="btn-ghost"
+          >Ver servicios <span aria-hidden="true">→</span></a
+        >
+      </div>
+
+      <div
+        class="stats-bar"
+        aria-label="Métricas clave"
+      >
+        <div class="stat">
+          <div class="stat-num">+40<span>%</span></div>
+          <div class="stat-label">Más tráfico orgánico de media</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3<span>x</span></div>
+          <div class="stat-label">Más conversiones con buen diseño</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">48<span>h</span></div>
+          <div class="stat-label">Tiempo de respuesta máximo</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Proyectos entregados a tiempo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+       SERVICIOS
+  ════════════════════════════ -->
+    <section
+      id="servicios"
+      aria-labelledby="servicios-title"
+    >
+      <div class="section-label">Qué hacemos</div>
+      <h2
+        class="section-title"
+        id="servicios-title"
+      >
+        Servicios diseñados para crecer
+      </h2>
+      <p class="section-subtitle">
+        Cada servicio está orientado a un objetivo claro: que tu negocio consiga
+        más clientes.
+      </p>
+
+      <div class="services-grid reveal">
+        <article class="service-card">
+          <div
+            class="service-icon"
+            aria-hidden="true"
+          >
+            🌐
+          </div>
+          <h3>Desarrollo Web</h3>
+          <p>
+            Webs rápidas, seguras y optimizadas para conversión. Diseñadas para
+            transmitir profesionalidad y captar clientes desde el primer
+            segundo.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Landing pages</span>
+            <span class="tag">Webs corporativas</span>
+            <span class="tag">Tiendas online</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div
+            class="service-icon"
+            aria-hidden="true"
+          >
+            📈
+          </div>
+          <h3>SEO y Posicionamiento</h3>
+          <p>
+            Aparece en Google cuando tus clientes te buscan. Estrategias de
+            posicionamiento local y nacional con resultados medibles y
+            sostenidos.
+          </p>
+          <div class="service-tags">
+            <span class="tag">SEO local</span>
+            <span class="tag">SEO técnico</span>
+            <span class="tag">Auditorías</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div
+            class="service-icon"
+            aria-hidden="true"
+          >
+            🎯
+          </div>
+          <h3>Marketing Digital</h3>
+          <p>
+            Campañas de publicidad y estrategias de contenido que llevan tráfico
+            cualificado a tu negocio. Sin gastar en quienes nunca van a
+            comprarte.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Google Ads</span>
+            <span class="tag">Meta Ads</span>
+            <span class="tag">Email marketing</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+       PROYECTOS
+  ════════════════════════════ -->
+    <section
+      id="proyectos"
+      aria-labelledby="proyectos-title"
+    >
+      <div class="section-label">Nuestro trabajo</div>
+      <h2
+        class="section-title"
+        id="proyectos-title"
+      >
+        Proyectos que generan resultados
+      </h2>
+      <p class="section-subtitle">
+        Cada proyecto tiene un objetivo claro detrás. Aquí van algunos ejemplos.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div
+            class="project-image"
+            aria-hidden="true"
+          >
+            <div class="project-image-overlay"></div>
+            <span>📸</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Desarrollo Web · Evento</div>
+            <h3>Plataforma de Eventos con Galería en Tiempo Real</h3>
+            <p>
+              Sistema de subida de fotos con QR para invitados, galería en
+              directo y descarga automática.
+            </p>
+            <div class="project-result">
+              ✓ +200 fotos gestionadas en tiempo real
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-1">
+          <div
+            class="project-image"
+            aria-hidden="true"
+          >
+            <div class="project-image-overlay"></div>
+            <span>🛒</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">E-commerce · SEO</div>
+            <h3>Tienda Online con Posicionamiento Local</h3>
+            <p>
+              Desarrollo de tienda y estrategia SEO local para aumentar visitas
+              orgánicas y pedidos.
+            </p>
+            <div class="project-result">
+              ✓ +65% de tráfico orgánico en 3 meses
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2">
+          <div
+            class="project-image"
+            aria-hidden="true"
+          >
+            <div class="project-image-overlay"></div>
+            <span>🏢</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Web Corporativa · Marketing</div>
+            <h3>Web y Campañas para Empresa de Servicios</h3>
+            <p>
+              Rediseño completo con nueva identidad, web de captación y campañas
+              en Google y Meta.
+            </p>
+            <div class="project-result">
+              ✓ 3x más consultas desde la web en 60 días
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+       POR QUÉ ELEGIRNOS
+  ════════════════════════════ -->
+    <section aria-labelledby="why-title">
+      <div class="why-grid">
+        <div>
+          <div class="section-label">Por qué elegirnos</div>
+          <h2
+            class="section-title"
+            id="why-title"
+          >
+            Trabajamos como socios, no como proveedores
+          </h2>
+          <p class="section-subtitle">
+            Nos implicamos en tu negocio para entender qué necesitas realmente y
+            darte soluciones que funcionen.
+          </p>
+          <ul
+            class="why-list"
+            role="list"
+          >
+            <li class="why-item reveal">
+              <div
+                class="why-icon"
+                aria-hidden="true"
+              >
+                ⚡
+              </div>
+              <div>
+                <h3>Entrega rápida y sin sorpresas</h3>
+                <p>
+                  Plazos claros desde el inicio. Sin retrasos, sin costes
+                  ocultos.
+                </p>
+              </div>
+            </li>
+            <li class="why-item reveal reveal-delay-1">
+              <div
+                class="why-icon"
+                aria-hidden="true"
+              >
+                📊
+              </div>
+              <div>
+                <h3>Orientación a resultados medibles</h3>
+                <p>
+                  Todo lo que hacemos tiene un KPI detrás. Sabrás exactamente
+                  qué está funcionando.
+                </p>
+              </div>
+            </li>
+            <li class="why-item reveal reveal-delay-2">
+              <div
+                class="why-icon"
+                aria-hidden="true"
+              >
+                🔧
+              </div>
+              <div>
+                <h3>Soporte continuo post-entrega</h3>
+                <p>
+                  No desaparecemos al entregar el proyecto. Estamos para lo que
+                  necesites.
+                </p>
+              </div>
+            </li>
+            <li class="why-item reveal reveal-delay-3">
+              <div
+                class="why-icon"
+                aria-hidden="true"
+              >
+                📍
+              </div>
+              <div>
+                <h3>Enfoque local y nacional</h3>
+                <p>
+                  Conocemos el mercado español y sabemos cómo posicionarte en
+                  él.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="why-visual reveal"
+          aria-label="Métricas de impacto"
+        >
+          <div
+            class="section-label"
+            style="margin-bottom: 24px"
+          >
+            Métricas de impacto
+          </div>
+          <div class="metric-row">
+            <div class="metric-label">
+              <span>Tráfico orgánico</span><span>+78%</span>
+            </div>
+            <div class="metric-bar">
+              <div
+                class="metric-fill"
+                style="--w: 78%"
+              ></div>
+            </div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-label">
+              <span>Tasa de conversión</span><span>+54%</span>
+            </div>
+            <div class="metric-bar">
+              <div
+                class="metric-fill"
+                style="--w: 54%"
+              ></div>
+            </div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-label">
+              <span>Velocidad de carga</span><span>+91%</span>
+            </div>
+            <div class="metric-bar">
+              <div
+                class="metric-fill"
+                style="--w: 91%"
+              ></div>
+            </div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-label">
+              <span>Posiciones en Google</span><span>+63%</span>
+            </div>
+            <div class="metric-bar">
+              <div
+                class="metric-fill"
+                style="--w: 63%"
+              ></div>
+            </div>
+          </div>
+          <p style="font-size: 12px; color: var(--muted); margin-top: 20px">
+            Datos medios de proyectos completados en los últimos 12 meses.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+       PROCESO
+  ════════════════════════════ -->
+    <section
+      id="proceso"
+      aria-labelledby="proceso-title"
+    >
+      <div class="section-label">Cómo trabajamos</div>
+      <h2
+        class="section-title"
+        id="proceso-title"
+      >
+        Un proceso claro de principio a fin
+      </h2>
+      <p class="section-subtitle">
+        Sin tecnicismos ni reuniones interminables. Solo trabajo bien hecho.
+      </p>
+
+      <ol
+        class="process-grid"
+        role="list"
+      >
+        <li class="process-step reveal">
+          <h3>Análisis inicial</h3>
+          <p>
+            Estudiamos tu negocio, tu competencia y tus objetivos antes de
+            escribir una sola línea de código.
+          </p>
+        </li>
+        <li class="process-step reveal reveal-delay-1">
+          <h3>Propuesta y diseño</h3>
+          <p>
+            Presentamos una propuesta clara con presupuesto cerrado y primer
+            diseño para tu aprobación.
+          </p>
+        </li>
+        <li class="process-step reveal reveal-delay-2">
+          <h3>Desarrollo</h3>
+          <p>
+            Construimos tu proyecto con tecnología moderna, optimizado para
+            velocidad y SEO desde el inicio.
+          </p>
+        </li>
+        <li class="process-step reveal reveal-delay-3">
+          <h3>Lanzamiento</h3>
+          <p>
+            Publicamos, configuramos analíticas y te entregamos con formación
+            para que gestiones tu web.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ═══════════════════════════
+       CONTACTO
+  ════════════════════════════ -->
+    <section
+      id="contacto"
+      aria-labelledby="contacto-title"
+    >
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <div class="section-label">Contacto</div>
+          <h2 id="contacto-title">¿Empezamos a trabajar juntos?</h2>
+          <p>
+            Cuéntanos tu proyecto. Respondemos en menos de 24 horas con una
+            propuesta inicial sin compromiso.
+          </p>
+          <div class="contact-methods">
+            <a
+              href="https://wa.me/34600000000"
+              class="contact-method"
+              target="_blank"
+              rel="noopener"
+              aria-label="Contactar por WhatsApp"
+            >
+              <div
+                class="method-icon wa"
+                aria-hidden="true"
+              >
+                💬
+              </div>
+              <div class="method-text">
+                <strong>WhatsApp directo</strong>
+                <span>La forma más rápida de contactar</span>
+              </div>
+            </a>
+            <a
+              href="mailto:hola@torreodev.com"
+              class="contact-method"
+              aria-label="Enviar email a hola@torreodev.com"
+            >
+              <div
+                class="method-icon mail"
+                aria-hidden="true"
+              >
+                ✉️
+              </div>
+              <div class="method-text">
+                <strong>hola@torreodev.com</strong>
+                <span>Para consultas más detalladas</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- FORMULARIO FORMSPREE + HONEYPOT + RATE LIMIT -->
+        <div class="contact-form reveal reveal-delay-1">
+          <h3>Cuéntanos tu proyecto</h3>
+
+          <form
+            id="contact-form"
+            novalidate
+            aria-label="Formulario de contacto"
+          >
+            <!-- HONEYPOT: campo invisible que los bots rellenan pero los humanos no -->
+            <div
+              class="hp-field"
+              aria-hidden="true"
+            >
+              <label for="website">No rellenar</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <!-- TIMESTAMP: detecta envíos demasiado rápidos (bots) -->
+            <input
+              type="hidden"
+              id="form-timestamp"
+              name="_timestamp"
+            />
+
+            <!-- Campos reales -->
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nombre"
+                  >Nombre
+                  <span
+                    class="required"
+                    aria-hidden="true"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                  autocomplete="given-name"
+                />
+                <span
+                  class="field-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input
+                  type="text"
+                  id="empresa"
+                  name="empresa"
+                  placeholder="Opcional"
+                  autocomplete="organization"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email"
+                  >Email
+                  <span
+                    class="required"
+                    aria-hidden="true"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                  autocomplete="email"
+                />
+                <span
+                  class="field-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="+34 600 000 000"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group full">
+                <label for="servicio"
+                  >¿Qué necesitas?
+                  <span
+                    class="required"
+                    aria-hidden="true"
+                    >*</span
+                  ></label
+                >
+                <select
+                  id="servicio"
+                  name="servicio"
+                  required
+                >
+                  <option value="">Selecciona un servicio</option>
+                  <option value="desarrollo-web">Desarrollo web</option>
+                  <option value="seo">SEO y posicionamiento</option>
+                  <option value="marketing">Marketing digital</option>
+                  <option value="paquete">Paquete completo</option>
+                  <option value="sin-definir">No lo tengo claro aún</option>
+                </select>
+                <span
+                  class="field-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <div class="form-group full">
+                <label for="mensaje"
+                  >Cuéntanos más
+                  <span
+                    class="required"
+                    aria-hidden="true"
+                    >*</span
+                  ></label
+                >
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  placeholder="¿Qué tienes en mente? Cuánto más detalle nos des, mejor podremos ayudarte."
+                  required
+                  minlength="20"
+                ></textarea>
+                <span
+                  class="field-error"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn-submit"
+              id="btn-submit"
+            >
+              <span id="btn-text">Enviar consulta →</span>
+              <span
+                id="btn-loading"
+                hidden
+                aria-hidden="true"
+                >Enviando…</span
+              >
+            </button>
+
+            <p class="form-notice">
+              Sin spam. Respondemos en menos de 24 h en días laborables.
+            </p>
+            <div
+              class="form-error-global"
+              id="form-error-global"
+              role="alert"
+              aria-live="assertive"
+              hidden
+            ></div>
+          </form>
+
+          <!-- Estado de éxito -->
+          <div
+            class="form-success"
+            id="form-success"
+            hidden
+            aria-live="polite"
+          >
+            <div
+              class="form-success-icon"
+              aria-hidden="true"
+            >
+              ✓
+            </div>
+            <h4>¡Mensaje recibido!</h4>
+            <p>
+              Te contactaremos en menos de 24 horas. Si lo necesitas antes,
+              escríbenos por WhatsApp.
+            </p>
+            <a
+              href="https://wa.me/34600000000"
+              class="btn-primary"
+              target="_blank"
+              rel="noopener"
+              >Ir al WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+       FOOTER
+  ════════════════════════════ -->
+    <footer role="contentinfo">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a
+            href="/"
+            class="logo"
+            aria-label="Torreodev - Inicio"
+            >TORREO<span>DEV</span></a
+          >
+          <p>
+            Agencia digital especializada en desarrollo web, SEO y marketing
+            digital. Resultados reales para negocios reales.
+          </p>
+        </div>
+        <nav
+          class="footer-links"
+          aria-label="Servicios"
+        >
+          <h4>Servicios</h4>
+          <a href="#servicios">Desarrollo Web</a>
+          <a href="#servicios">SEO y Posicionamiento</a>
+          <a href="#servicios">Marketing Digital</a>
+        </nav>
+        <nav
+          class="footer-links"
+          aria-label="Empresa"
+        >
+          <h4>Empresa</h4>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <nav
+          class="footer-links"
+          aria-label="Contacto"
+        >
+          <h4>Contacto</h4>
+          <a
+            href="https://wa.me/34600000000"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a href="mailto:hola@torreodev.com">hola@torreodev.com</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © <span id="year"></span> Torreodev. Todos los derechos reservados.
+        </p>
+        <p>Hecho con 💛 en Extremadura</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <div
+      class="wa-bubble"
+      aria-label="Contactar por WhatsApp"
+    >
+      <span
+        class="wa-label"
+        aria-hidden="true"
+        >¿Hablamos por WhatsApp?</span
+      >
+      <a
+        href="https://wa.me/34600000000"
+        class="wa-btn"
+        target="_blank"
+        rel="noopener"
+        aria-label="Abrir WhatsApp"
+        >💬</a
+      >
+    </div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

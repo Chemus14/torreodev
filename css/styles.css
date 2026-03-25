@@ -14,6 +14,7 @@
    11. WhatsApp flotante
    12. Animaciones
    13. Responsive
+   14. Selector de idioma
 ══════════════════════════════════════════ */
 
 /* ─────────────────────────────────────────
@@ -1075,4 +1076,43 @@ footer {
   .footer-bottom { flex-direction: column; text-align: center; }
   footer { padding: 40px 24px 28px; }
   .contact-form { padding: 28px 20px; }
+}
+
+/* ─────────────────────────────────────────
+   SELECTOR DE IDIOMA
+───────────────────────────────────────── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 16px;
+}
+
+.lang-sep {
+  color: var(--border);
+  font-size: 12px;
+  user-select: none;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.lang-btn:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+.lang-btn.active { color: var(--accent); }
+
+@media (max-width: 960px) {
+  .lang-switcher { margin-right: 8px; }
+  .lang-btn { font-size: 12px; padding: 5px 6px; }
 }

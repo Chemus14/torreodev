@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="es">
+<html
+  lang="es"
+  data-lang="es"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -88,7 +91,6 @@
 
     <!-- ═══════════════════════════════════════
        DATOS ESTRUCTURADOS (Schema.org)
-       Google los usa para mostrar info rica
   ════════════════════════════════════════ -->
     <script type="application/ld+json">
       {
@@ -110,9 +112,6 @@
       }
     </script>
 
-    <!-- ═══════════════════════════════════════
-       FAVICON (cuando tengas el archivo)
-  ════════════════════════════════════════ -->
     <link
       rel="icon"
       type="image/svg+xml"
@@ -123,9 +122,6 @@
       content="#0a0a0f"
     />
 
-    <!-- ═══════════════════════════════════════
-       FUENTES (solo los pesos que usamos)
-  ════════════════════════════════════════ -->
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -140,7 +136,6 @@
       rel="stylesheet"
     />
 
-    <!-- CSS -->
     <link
       rel="stylesheet"
       href="css/styles.css"
@@ -157,19 +152,73 @@
         aria-label="Torreodev - Inicio"
         >TORREO<span>DEV</span></a
       >
+
       <nav
         role="navigation"
         aria-label="Navegación principal"
       >
-        <a href="#servicios">Servicios</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#proceso">Proceso</a>
+        <a
+          href="#servicios"
+          data-i18n="nav.services"
+          >Servicios</a
+        >
+        <a
+          href="#proyectos"
+          data-i18n="nav.projects"
+          >Proyectos</a
+        >
+        <a
+          href="#proceso"
+          data-i18n="nav.process"
+          >Proceso</a
+        >
         <a
           href="#contacto"
           class="nav-cta"
+          data-i18n="nav.contact"
           >Contactar</a
         >
       </nav>
+
+      <!-- SELECTOR DE IDIOMA -->
+      <div
+        class="lang-switcher"
+        role="navigation"
+        aria-label="Selector de idioma"
+      >
+        <button
+          class="lang-btn active"
+          data-lang="es"
+          aria-label="Español"
+        >
+          🇪🇸 ES
+        </button>
+        <span
+          class="lang-sep"
+          aria-hidden="true"
+          >|</span
+        >
+        <button
+          class="lang-btn"
+          data-lang="en"
+          aria-label="English"
+        >
+          🇬🇧 EN
+        </button>
+        <span
+          class="lang-sep"
+          aria-hidden="true"
+          >|</span
+        >
+        <button
+          class="lang-btn"
+          data-lang="pl"
+          aria-label="Polski"
+        >
+          🇵🇱 PL
+        </button>
+      </div>
+
       <button
         class="hamburger"
         id="hamburger"
@@ -187,12 +236,25 @@
       role="navigation"
       aria-label="Menú móvil"
     >
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#proceso">Proceso</a>
+      <a
+        href="#servicios"
+        data-i18n="nav.services"
+        >Servicios</a
+      >
+      <a
+        href="#proyectos"
+        data-i18n="nav.projects"
+        >Proyectos</a
+      >
+      <a
+        href="#proceso"
+        data-i18n="nav.process"
+        >Proceso</a
+      >
       <a
         href="#contacto"
         class="mobile-cta"
+        data-i18n="nav.cta"
         >Solicitar presupuesto</a
       >
     </div>
@@ -216,15 +278,22 @@
       <div
         class="hero-label"
         aria-hidden="true"
+        data-i18n="hero.label"
       >
         Agencia digital · Resultados reales
       </div>
 
-      <h1 id="hero-title">
+      <h1
+        id="hero-title"
+        data-i18n="hero.title"
+      >
         Tu presencia digital que <em>trabaja</em><br />mientras tú descansas
       </h1>
 
-      <p class="hero-desc">
+      <p
+        class="hero-desc"
+        data-i18n="hero.desc"
+      >
         Desarrollamos webs profesionales, estrategias SEO y campañas de
         marketing digital orientadas a resultados. No vendemos páginas web:
         construimos activos de negocio.
@@ -237,13 +306,16 @@
           target="_blank"
           rel="noopener"
         >
-          <span aria-hidden="true">💬</span> Hablar por WhatsApp
+          <span aria-hidden="true">💬</span>
+          <span data-i18n="hero.cta.wa">Hablar por WhatsApp</span>
         </a>
         <a
           href="#servicios"
           class="btn-ghost"
-          >Ver servicios <span aria-hidden="true">→</span></a
         >
+          <span data-i18n="hero.cta.services">Ver servicios</span>
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
 
       <div
@@ -252,19 +324,39 @@
       >
         <div class="stat">
           <div class="stat-num">+40<span>%</span></div>
-          <div class="stat-label">Más tráfico orgánico de media</div>
+          <div
+            class="stat-label"
+            data-i18n="stats.traffic"
+          >
+            Más tráfico orgánico de media
+          </div>
         </div>
         <div class="stat">
           <div class="stat-num">3<span>x</span></div>
-          <div class="stat-label">Más conversiones con buen diseño</div>
+          <div
+            class="stat-label"
+            data-i18n="stats.conversions"
+          >
+            Más conversiones con buen diseño
+          </div>
         </div>
         <div class="stat">
           <div class="stat-num">48<span>h</span></div>
-          <div class="stat-label">Tiempo de respuesta máximo</div>
+          <div
+            class="stat-label"
+            data-i18n="stats.response"
+          >
+            Tiempo de respuesta máximo
+          </div>
         </div>
         <div class="stat">
           <div class="stat-num">100<span>%</span></div>
-          <div class="stat-label">Proyectos entregados a tiempo</div>
+          <div
+            class="stat-label"
+            data-i18n="stats.delivery"
+          >
+            Proyectos entregados a tiempo
+          </div>
         </div>
       </div>
     </section>
@@ -276,14 +368,23 @@
       id="servicios"
       aria-labelledby="servicios-title"
     >
-      <div class="section-label">Qué hacemos</div>
+      <div
+        class="section-label"
+        data-i18n="services.label"
+      >
+        Qué hacemos
+      </div>
       <h2
         class="section-title"
         id="servicios-title"
+        data-i18n="services.title"
       >
         Servicios diseñados para crecer
       </h2>
-      <p class="section-subtitle">
+      <p
+        class="section-subtitle"
+        data-i18n="services.subtitle"
+      >
         Cada servicio está orientado a un objetivo claro: que tu negocio consiga
         más clientes.
       </p>
@@ -296,16 +397,24 @@
           >
             🌐
           </div>
-          <h3>Desarrollo Web</h3>
-          <p>
+          <h3 data-i18n="services.web.title">Desarrollo Web</h3>
+          <p data-i18n="services.web.desc">
             Webs rápidas, seguras y optimizadas para conversión. Diseñadas para
             transmitir profesionalidad y captar clientes desde el primer
             segundo.
           </p>
           <div class="service-tags">
             <span class="tag">Landing pages</span>
-            <span class="tag">Webs corporativas</span>
-            <span class="tag">Tiendas online</span>
+            <span
+              class="tag"
+              data-i18n="services.web.tag2"
+              >Webs corporativas</span
+            >
+            <span
+              class="tag"
+              data-i18n="services.web.tag3"
+              >Tiendas online</span
+            >
           </div>
         </article>
 
@@ -316,16 +425,28 @@
           >
             📈
           </div>
-          <h3>SEO y Posicionamiento</h3>
-          <p>
+          <h3 data-i18n="services.seo.title">SEO y Posicionamiento</h3>
+          <p data-i18n="services.seo.desc">
             Aparece en Google cuando tus clientes te buscan. Estrategias de
             posicionamiento local y nacional con resultados medibles y
             sostenidos.
           </p>
           <div class="service-tags">
-            <span class="tag">SEO local</span>
-            <span class="tag">SEO técnico</span>
-            <span class="tag">Auditorías</span>
+            <span
+              class="tag"
+              data-i18n="services.seo.tag1"
+              >SEO local</span
+            >
+            <span
+              class="tag"
+              data-i18n="services.seo.tag2"
+              >SEO técnico</span
+            >
+            <span
+              class="tag"
+              data-i18n="services.seo.tag3"
+              >Auditorías</span
+            >
           </div>
         </article>
 
@@ -336,8 +457,8 @@
           >
             🎯
           </div>
-          <h3>Marketing Digital</h3>
-          <p>
+          <h3 data-i18n="services.marketing.title">Marketing Digital</h3>
+          <p data-i18n="services.marketing.desc">
             Campañas de publicidad y estrategias de contenido que llevan tráfico
             cualificado a tu negocio. Sin gastar en quienes nunca van a
             comprarte.
@@ -358,14 +479,23 @@
       id="proyectos"
       aria-labelledby="proyectos-title"
     >
-      <div class="section-label">Nuestro trabajo</div>
+      <div
+        class="section-label"
+        data-i18n="projects.label"
+      >
+        Nuestro trabajo
+      </div>
       <h2
         class="section-title"
         id="proyectos-title"
+        data-i18n="projects.title"
       >
         Proyectos que generan resultados
       </h2>
-      <p class="section-subtitle">
+      <p
+        class="section-subtitle"
+        data-i18n="projects.subtitle"
+      >
         Cada proyecto tiene un objetivo claro detrás. Aquí van algunos ejemplos.
       </p>
 
@@ -379,13 +509,23 @@
             <span>📸</span>
           </div>
           <div class="project-body">
-            <div class="project-type">Desarrollo Web · Evento</div>
-            <h3>Plataforma de Eventos con Galería en Tiempo Real</h3>
-            <p>
+            <div
+              class="project-type"
+              data-i18n="projects.p1.type"
+            >
+              Desarrollo Web · Evento
+            </div>
+            <h3 data-i18n="projects.p1.title">
+              Plataforma de Eventos con Galería en Tiempo Real
+            </h3>
+            <p data-i18n="projects.p1.desc">
               Sistema de subida de fotos con QR para invitados, galería en
               directo y descarga automática.
             </p>
-            <div class="project-result">
+            <div
+              class="project-result"
+              data-i18n="projects.p1.result"
+            >
               ✓ +200 fotos gestionadas en tiempo real
             </div>
           </div>
@@ -400,13 +540,23 @@
             <span>🛒</span>
           </div>
           <div class="project-body">
-            <div class="project-type">E-commerce · SEO</div>
-            <h3>Tienda Online con Posicionamiento Local</h3>
-            <p>
+            <div
+              class="project-type"
+              data-i18n="projects.p2.type"
+            >
+              E-commerce · SEO
+            </div>
+            <h3 data-i18n="projects.p2.title">
+              Tienda Online con Posicionamiento Local
+            </h3>
+            <p data-i18n="projects.p2.desc">
               Desarrollo de tienda y estrategia SEO local para aumentar visitas
               orgánicas y pedidos.
             </p>
-            <div class="project-result">
+            <div
+              class="project-result"
+              data-i18n="projects.p2.result"
+            >
               ✓ +65% de tráfico orgánico en 3 meses
             </div>
           </div>
@@ -421,13 +571,23 @@
             <span>🏢</span>
           </div>
           <div class="project-body">
-            <div class="project-type">Web Corporativa · Marketing</div>
-            <h3>Web y Campañas para Empresa de Servicios</h3>
-            <p>
+            <div
+              class="project-type"
+              data-i18n="projects.p3.type"
+            >
+              Web Corporativa · Marketing
+            </div>
+            <h3 data-i18n="projects.p3.title">
+              Web y Campañas para Empresa de Servicios
+            </h3>
+            <p data-i18n="projects.p3.desc">
               Rediseño completo con nueva identidad, web de captación y campañas
               en Google y Meta.
             </p>
-            <div class="project-result">
+            <div
+              class="project-result"
+              data-i18n="projects.p3.result"
+            >
               ✓ 3x más consultas desde la web en 60 días
             </div>
           </div>
@@ -441,14 +601,23 @@
     <section aria-labelledby="why-title">
       <div class="why-grid">
         <div>
-          <div class="section-label">Por qué elegirnos</div>
+          <div
+            class="section-label"
+            data-i18n="why.label"
+          >
+            Por qué elegirnos
+          </div>
           <h2
             class="section-title"
             id="why-title"
+            data-i18n="why.title"
           >
             Trabajamos como socios, no como proveedores
           </h2>
-          <p class="section-subtitle">
+          <p
+            class="section-subtitle"
+            data-i18n="why.subtitle"
+          >
             Nos implicamos en tu negocio para entender qué necesitas realmente y
             darte soluciones que funcionen.
           </p>
@@ -464,8 +633,8 @@
                 ⚡
               </div>
               <div>
-                <h3>Entrega rápida y sin sorpresas</h3>
-                <p>
+                <h3 data-i18n="why.w1.title">Entrega rápida y sin sorpresas</h3>
+                <p data-i18n="why.w1.desc">
                   Plazos claros desde el inicio. Sin retrasos, sin costes
                   ocultos.
                 </p>
@@ -479,8 +648,10 @@
                 📊
               </div>
               <div>
-                <h3>Orientación a resultados medibles</h3>
-                <p>
+                <h3 data-i18n="why.w2.title">
+                  Orientación a resultados medibles
+                </h3>
+                <p data-i18n="why.w2.desc">
                   Todo lo que hacemos tiene un KPI detrás. Sabrás exactamente
                   qué está funcionando.
                 </p>
@@ -494,8 +665,8 @@
                 🔧
               </div>
               <div>
-                <h3>Soporte continuo post-entrega</h3>
-                <p>
+                <h3 data-i18n="why.w3.title">Soporte continuo post-entrega</h3>
+                <p data-i18n="why.w3.desc">
                   No desaparecemos al entregar el proyecto. Estamos para lo que
                   necesites.
                 </p>
@@ -509,8 +680,8 @@
                 📍
               </div>
               <div>
-                <h3>Enfoque local y nacional</h3>
-                <p>
+                <h3 data-i18n="why.w4.title">Enfoque local y nacional</h3>
+                <p data-i18n="why.w4.desc">
                   Conocemos el mercado español y sabemos cómo posicionarte en
                   él.
                 </p>
@@ -526,12 +697,14 @@
           <div
             class="section-label"
             style="margin-bottom: 24px"
+            data-i18n="why.metrics.label"
           >
             Métricas de impacto
           </div>
           <div class="metric-row">
             <div class="metric-label">
-              <span>Tráfico orgánico</span><span>+78%</span>
+              <span data-i18n="why.metrics.traffic">Tráfico orgánico</span
+              ><span>+78%</span>
             </div>
             <div class="metric-bar">
               <div
@@ -542,7 +715,8 @@
           </div>
           <div class="metric-row">
             <div class="metric-label">
-              <span>Tasa de conversión</span><span>+54%</span>
+              <span data-i18n="why.metrics.conversion">Tasa de conversión</span
+              ><span>+54%</span>
             </div>
             <div class="metric-bar">
               <div
@@ -553,7 +727,8 @@
           </div>
           <div class="metric-row">
             <div class="metric-label">
-              <span>Velocidad de carga</span><span>+91%</span>
+              <span data-i18n="why.metrics.speed">Velocidad de carga</span
+              ><span>+91%</span>
             </div>
             <div class="metric-bar">
               <div
@@ -564,7 +739,8 @@
           </div>
           <div class="metric-row">
             <div class="metric-label">
-              <span>Posiciones en Google</span><span>+63%</span>
+              <span data-i18n="why.metrics.positions">Posiciones en Google</span
+              ><span>+63%</span>
             </div>
             <div class="metric-bar">
               <div
@@ -573,7 +749,10 @@
               ></div>
             </div>
           </div>
-          <p style="font-size: 12px; color: var(--muted); margin-top: 20px">
+          <p
+            style="font-size: 12px; color: var(--muted); margin-top: 20px"
+            data-i18n="why.metrics.note"
+          >
             Datos medios de proyectos completados en los últimos 12 meses.
           </p>
         </div>
@@ -587,14 +766,23 @@
       id="proceso"
       aria-labelledby="proceso-title"
     >
-      <div class="section-label">Cómo trabajamos</div>
+      <div
+        class="section-label"
+        data-i18n="process.label"
+      >
+        Cómo trabajamos
+      </div>
       <h2
         class="section-title"
         id="proceso-title"
+        data-i18n="process.title"
       >
         Un proceso claro de principio a fin
       </h2>
-      <p class="section-subtitle">
+      <p
+        class="section-subtitle"
+        data-i18n="process.subtitle"
+      >
         Sin tecnicismos ni reuniones interminables. Solo trabajo bien hecho.
       </p>
 
@@ -603,29 +791,29 @@
         role="list"
       >
         <li class="process-step reveal">
-          <h3>Análisis inicial</h3>
-          <p>
+          <h3 data-i18n="process.s1.title">Análisis inicial</h3>
+          <p data-i18n="process.s1.desc">
             Estudiamos tu negocio, tu competencia y tus objetivos antes de
             escribir una sola línea de código.
           </p>
         </li>
         <li class="process-step reveal reveal-delay-1">
-          <h3>Propuesta y diseño</h3>
-          <p>
+          <h3 data-i18n="process.s2.title">Propuesta y diseño</h3>
+          <p data-i18n="process.s2.desc">
             Presentamos una propuesta clara con presupuesto cerrado y primer
             diseño para tu aprobación.
           </p>
         </li>
         <li class="process-step reveal reveal-delay-2">
-          <h3>Desarrollo</h3>
-          <p>
+          <h3 data-i18n="process.s3.title">Desarrollo</h3>
+          <p data-i18n="process.s3.desc">
             Construimos tu proyecto con tecnología moderna, optimizado para
             velocidad y SEO desde el inicio.
           </p>
         </li>
         <li class="process-step reveal reveal-delay-3">
-          <h3>Lanzamiento</h3>
-          <p>
+          <h3 data-i18n="process.s4.title">Lanzamiento</h3>
+          <p data-i18n="process.s4.desc">
             Publicamos, configuramos analíticas y te entregamos con formación
             para que gestiones tu web.
           </p>
@@ -642,9 +830,19 @@
     >
       <div class="contact-wrapper">
         <div class="contact-info reveal">
-          <div class="section-label">Contacto</div>
-          <h2 id="contacto-title">¿Empezamos a trabajar juntos?</h2>
-          <p>
+          <div
+            class="section-label"
+            data-i18n="contact.label"
+          >
+            Contacto
+          </div>
+          <h2
+            id="contacto-title"
+            data-i18n="contact.title"
+          >
+            ¿Empezamos a trabajar juntos?
+          </h2>
+          <p data-i18n="contact.desc">
             Cuéntanos tu proyecto. Respondemos en menos de 24 horas con una
             propuesta inicial sin compromiso.
           </p>
@@ -663,14 +861,16 @@
                 💬
               </div>
               <div class="method-text">
-                <strong>WhatsApp directo</strong>
-                <span>La forma más rápida de contactar</span>
+                <strong data-i18n="contact.wa.title">WhatsApp directo</strong>
+                <span data-i18n="contact.wa.desc"
+                  >La forma más rápida de contactar</span
+                >
               </div>
             </a>
             <a
               href="mailto:hola@torreodev.com"
               class="contact-method"
-              aria-label="Enviar email a hola@torreodev.com"
+              aria-label="Enviar email"
             >
               <div
                 class="method-icon mail"
@@ -680,7 +880,9 @@
               </div>
               <div class="method-text">
                 <strong>hola@torreodev.com</strong>
-                <span>Para consultas más detalladas</span>
+                <span data-i18n="contact.email.desc"
+                  >Para consultas más detalladas</span
+                >
               </div>
             </a>
           </div>
@@ -688,7 +890,7 @@
 
         <!-- FORMULARIO FORMSPREE + HONEYPOT + RATE LIMIT -->
         <div class="contact-form reveal reveal-delay-1">
-          <h3>Cuéntanos tu proyecto</h3>
+          <h3 data-i18n="form.title">Cuéntanos tu proyecto</h3>
 
           <form
             id="contact-form"
@@ -717,21 +919,21 @@
               name="_timestamp"
             />
 
-            <!-- Campos reales -->
             <div class="form-grid">
               <div class="form-group">
-                <label for="nombre"
-                  >Nombre
+                <label for="nombre">
+                  <span data-i18n="form.name">Nombre</span>
                   <span
                     class="required"
                     aria-hidden="true"
                     >*</span
-                  ></label
-                >
+                  >
+                </label>
                 <input
                   type="text"
                   id="nombre"
                   name="nombre"
+                  data-i18n="form.placeholder.name"
                   placeholder="Tu nombre"
                   required
                   autocomplete="given-name"
@@ -744,29 +946,35 @@
               </div>
 
               <div class="form-group">
-                <label for="empresa">Empresa</label>
+                <label
+                  for="empresa"
+                  data-i18n="form.company"
+                  >Empresa</label
+                >
                 <input
                   type="text"
                   id="empresa"
                   name="empresa"
+                  data-i18n="form.placeholder.company"
                   placeholder="Opcional"
                   autocomplete="organization"
                 />
               </div>
 
               <div class="form-group">
-                <label for="email"
-                  >Email
+                <label for="email">
+                  <span data-i18n="form.email">Email</span>
                   <span
                     class="required"
                     aria-hidden="true"
                     >*</span
-                  ></label
-                >
+                  >
+                </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
+                  data-i18n="form.placeholder.email"
                   placeholder="tu@email.com"
                   required
                   autocomplete="email"
@@ -779,36 +987,71 @@
               </div>
 
               <div class="form-group">
-                <label for="telefono">Teléfono</label>
+                <label
+                  for="telefono"
+                  data-i18n="form.phone"
+                  >Teléfono</label
+                >
                 <input
                   type="tel"
                   id="telefono"
                   name="telefono"
+                  data-i18n="form.placeholder.phone"
                   placeholder="+34 600 000 000"
                   autocomplete="tel"
                 />
               </div>
 
               <div class="form-group full">
-                <label for="servicio"
-                  >¿Qué necesitas?
+                <label for="servicio">
+                  <span data-i18n="form.service">¿Qué necesitas?</span>
                   <span
                     class="required"
                     aria-hidden="true"
                     >*</span
-                  ></label
-                >
+                  >
+                </label>
                 <select
                   id="servicio"
                   name="servicio"
                   required
                 >
-                  <option value="">Selecciona un servicio</option>
-                  <option value="desarrollo-web">Desarrollo web</option>
-                  <option value="seo">SEO y posicionamiento</option>
-                  <option value="marketing">Marketing digital</option>
-                  <option value="paquete">Paquete completo</option>
-                  <option value="sin-definir">No lo tengo claro aún</option>
+                  <option
+                    value=""
+                    data-i18n="form.service.placeholder"
+                  >
+                    Selecciona un servicio
+                  </option>
+                  <option
+                    value="desarrollo-web"
+                    data-i18n="form.service.web"
+                  >
+                    Desarrollo web
+                  </option>
+                  <option
+                    value="seo"
+                    data-i18n="form.service.seo"
+                  >
+                    SEO y posicionamiento
+                  </option>
+                  <option
+                    value="marketing"
+                    data-i18n="form.service.marketing"
+                  >
+                    Marketing digital
+                  </option>
+                  <option
+                    value="paquete"
+                    data-i18n="form.service.bundle"
+                  >
+                    Paquete completo
+                  </option>
+                  <option
+                    value="sin-definir"
+                    data-i18n="form.service.unsure"
+                  >
+                    No lo tengo claro aún
+                  </option>
                 </select>
                 <span
                   class="field-error"
@@ -818,17 +1061,18 @@
               </div>
 
               <div class="form-group full">
-                <label for="mensaje"
-                  >Cuéntanos más
+                <label for="mensaje">
+                  <span data-i18n="form.message">Cuéntanos más</span>
                   <span
                     class="required"
                     aria-hidden="true"
                     >*</span
-                  ></label
-                >
+                  >
+                </label>
                 <textarea
                   id="mensaje"
                   name="mensaje"
+                  data-i18n="form.placeholder.message"
                   placeholder="¿Qué tienes en mente? Cuánto más detalle nos des, mejor podremos ayudarte."
                   required
                   minlength="20"
@@ -846,16 +1090,24 @@
               class="btn-submit"
               id="btn-submit"
             >
-              <span id="btn-text">Enviar consulta →</span>
+              <span
+                id="btn-text"
+                data-i18n="form.submit"
+                >Enviar consulta →</span
+              >
               <span
                 id="btn-loading"
                 hidden
                 aria-hidden="true"
+                data-i18n="form.sending"
                 >Enviando…</span
               >
             </button>
 
-            <p class="form-notice">
+            <p
+              class="form-notice"
+              data-i18n="form.notice"
+            >
               Sin spam. Respondemos en menos de 24 h en días laborables.
             </p>
             <div
@@ -880,8 +1132,8 @@
             >
               ✓
             </div>
-            <h4>¡Mensaje recibido!</h4>
-            <p>
+            <h4 data-i18n="form.success.title">¡Mensaje recibido!</h4>
+            <p data-i18n="form.success.desc">
               Te contactaremos en menos de 24 horas. Si lo necesitas antes,
               escríbenos por WhatsApp.
             </p>
@@ -890,8 +1142,9 @@
               class="btn-primary"
               target="_blank"
               rel="noopener"
-              >Ir al WhatsApp</a
             >
+              <span data-i18n="form.success.cta">Ir al WhatsApp</span>
+            </a>
           </div>
         </div>
       </div>
@@ -909,7 +1162,7 @@
             aria-label="Torreodev - Inicio"
             >TORREO<span>DEV</span></a
           >
-          <p>
+          <p data-i18n="footer.tagline">
             Agencia digital especializada en desarrollo web, SEO y marketing
             digital. Resultados reales para negocios reales.
           </p>
@@ -918,25 +1171,49 @@
           class="footer-links"
           aria-label="Servicios"
         >
-          <h4>Servicios</h4>
-          <a href="#servicios">Desarrollo Web</a>
-          <a href="#servicios">SEO y Posicionamiento</a>
-          <a href="#servicios">Marketing Digital</a>
+          <h4 data-i18n="nav.services">Servicios</h4>
+          <a
+            href="#servicios"
+            data-i18n="services.web.title"
+            >Desarrollo Web</a
+          >
+          <a
+            href="#servicios"
+            data-i18n="services.seo.title"
+            >SEO y Posicionamiento</a
+          >
+          <a
+            href="#servicios"
+            data-i18n="services.marketing.title"
+            >Marketing Digital</a
+          >
         </nav>
         <nav
           class="footer-links"
           aria-label="Empresa"
         >
-          <h4>Empresa</h4>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#contacto">Contacto</a>
+          <h4 data-i18n="footer.company">Empresa</h4>
+          <a
+            href="#proyectos"
+            data-i18n="nav.projects"
+            >Proyectos</a
+          >
+          <a
+            href="#proceso"
+            data-i18n="nav.process"
+            >Proceso</a
+          >
+          <a
+            href="#contacto"
+            data-i18n="nav.contact"
+            >Contacto</a
+          >
         </nav>
         <nav
           class="footer-links"
           aria-label="Contacto"
         >
-          <h4>Contacto</h4>
+          <h4 data-i18n="contact.label">Contacto</h4>
           <a
             href="https://wa.me/34600000000"
             target="_blank"
@@ -947,10 +1224,10 @@
         </nav>
       </div>
       <div class="footer-bottom">
-        <p>
-          © <span id="year"></span> Torreodev. Todos los derechos reservados.
+        <p data-i18n="footer.copy">
+          © 2025 Torreodev. Todos los derechos reservados.
         </p>
-        <p>Hecho con 💛 en Extremadura</p>
+        <p data-i18n="footer.made">Hecho con 💛 en Extremadura</p>
       </div>
     </footer>
 
@@ -962,6 +1239,7 @@
       <span
         class="wa-label"
         aria-hidden="true"
+        data-i18n="wa.label"
         >¿Hablamos por WhatsApp?</span
       >
       <a
@@ -974,7 +1252,6 @@
       >
     </div>
 
-    <!-- JS -->
     <script src="js/main.js"></script>
   </body>
 </html>

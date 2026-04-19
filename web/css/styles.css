@@ -93,6 +93,11 @@ header {
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--text);
+  display: flex;
+}
+.logo-img {
+  height: 35px;
+  filter: drop-shadow(0 0 6px rgba(0, 200, 255, 0.4));
 }
 
 .logo span { color: var(--accent); }
@@ -764,7 +769,7 @@ section { padding: 100px 40px; position: relative; }
   left: -9999px;
   opacity: 0;
   pointer-events: none;
-  tab-index: -1;
+  /* tab-index: -1; */
 }
 
 /* Grid de campos */

@@ -139,7 +139,7 @@
   // ⚠️ IMPORTANTE: sustituye este endpoint por el tuyo de Formspree
   // Crea tu formulario gratis en https://formspree.io/
   // y pega aquí la URL que te dan (ej: https://formspree.io/f/xabcdefg)
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/TU_ID_AQUI'
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xvzdqoyn'
 
   const MAX_SUBMISSIONS = 3 // máximo envíos por sesión de pestaña
   const MIN_FILL_TIME = 4000 // ms mínimos para rellenar el formulario (humano)
